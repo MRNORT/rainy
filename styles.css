@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 2s ease-in-out, backgroundColorChange 10s infinite alternate;
+    background: linear-gradient(-45deg, #5d4b85, #b09fdc, #7861a3, #ceb9ef);
+    background-size: 400% 400%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundColorChange {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.invite-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #7289da;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.invite-button:hover {
+    background-color: #5a68a2;
+}
+
+.description {
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+.logo {
+    max-width: 100px; /* Adjust the size as needed */
+    margin-bottom: 20px;
+    border-radius: 10px; /* This will round the corners */
+    opacity: 0; /* Start with opacity 0 to make it invisible */
+    animation: fadeIn 2s ease-in-out forwards; /* Add this line for the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Optional: Add a slight upward motion */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.join-discord-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #7289da;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    margin-left: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.join-discord-button:hover {
+    background-color: #5a68a2;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
